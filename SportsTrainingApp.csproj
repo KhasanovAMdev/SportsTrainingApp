@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Activity\rajo4eib.oid~" />
+    <None Remove="free-icon-fitness-4729328.png" />
+    <None Remove="l2itol0i.q13~" />
+    <None Remove="MainWindow.xaml.cs~RF63ae882.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql" Version="9.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="free-icon-fitness-4729328.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Challenges\formAddChallenges.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Challenges\formChallenges.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Challenges\formUpdChallenges.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="formLogin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>
